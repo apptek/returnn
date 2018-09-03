@@ -169,6 +169,7 @@ class LSTME(Unit):
     # return: next outputs (# unit.n_act, y_t, c_t, ...)
     return (y_t * i_output, c_t * i_h + c_p * (1 - i_h)) + tuple(other_outputs)
 
+
 class LSTMS(Unit):
   """
   A theano based LSTM implementation
